@@ -10,5 +10,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "authors": [
+    "Mara Timberlake <maratimberlake@msn.com>"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
 }
