@@ -6,7 +6,10 @@ import { RosterComponent }   from './roster/roster.component';
 
 import { PlayerDetailComponent }   from './player-detail/player-detail.component';
 
+import { AdminComponent }   from './admin/admin.component';
+
 const appRoutes: Routes = [
+
   {
      path: '',
      component: WelcomeComponent
@@ -22,6 +25,11 @@ const appRoutes: Routes = [
   {
   path: 'players/:id',
   component: PlayerDetailComponent
+},
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 ];
+
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

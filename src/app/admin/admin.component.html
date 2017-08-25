@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>Add New Player Details</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Number:</label>
+        <br>
+        <input #newJersey>
+      </div>
+
+      <div>
+        <label>Position:</label>
+        <br>
+        <textarea #newPosition></textarea>
+      </div>
+      <button (click)="submitForm(newName.value, newJersey.value, newPosition.value); newTitle.value=''; newArtist.value=''; newDescription.value=''">Add</button>
+    </div>
+  </div>
+</div>

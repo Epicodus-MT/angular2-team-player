@@ -13,7 +13,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 
 export class RosterComponent implements OnInit {
   players: FirebaseListObservable<any[]>;
-  
+
   constructor(private router: Router, private playerService: PlayerService) {}
 
   ngOnInit(){
@@ -21,6 +21,6 @@ export class RosterComponent implements OnInit {
   }
 
   goToDetailPage(clickedPlayer: Player) {
-    this.router.navigate(['players', clickedPlayer.id]);
+    // this.router.navigate(['players', clickedPlayer.id]);
   };
 }
