@@ -7,14 +7,14 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
-import { TeamRosterComponent } from './team-roster/team-roster.component';
+import { RosterComponent } from './roster/roster.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     AboutComponent,
-    TeamRosterComponent
+    RosterComponent
   ],
   imports: [
     BrowserModule,
