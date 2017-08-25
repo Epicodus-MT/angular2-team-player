@@ -13,6 +13,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
+import { EditPlayerComponent } from './edit-player/edit-player.component';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyD-MB2TMXzqEA22uwHgYUQbQ3kF3S2KIIk",
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     AboutComponent,
     RosterComponent,
     PlayerDetailComponent,
-    AdminComponent
+    AdminComponent,
+    EditPlayerComponent
   ],
 
   imports: [
