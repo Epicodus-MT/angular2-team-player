@@ -5,7 +5,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class PlayerService {
-  albums: FirebaseListObservable<any[]>;
+  players: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
     this.players = database.list('players');

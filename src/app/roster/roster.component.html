@@ -2,11 +2,11 @@
 
 <div *ngFor="let player of players | async" (click)="goToDetailPage(player)" class="panel panel-default">
   <div class="panel-body">
-    <h3 (click)="goToDetailPage(album)"><em>{{player.name}}</em> {{player.jersey}}</h3>
+    <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em> {{player.jersey}}</h3>
     <div *ngIf="currentRoute === '/admin'">
       {{player.position}}
       <hr>
-      <app-edit-player [selectedAlbum]="album"></app-edit-player>
+      <app-edit-player [selectedPlayer]="player"></app-edit-player>
     </div>
   </div>
 </div>
