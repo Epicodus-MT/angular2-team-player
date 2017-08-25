@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 
 import { Player } from '../player.model';
 import { PlayerService } from '../player.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-player-detail',
@@ -11,9 +12,10 @@ import { PlayerService } from '../player.service';
   styleUrls: ['./player-detail.component.css']
   providers: [PlayerService]
 })
+
 export class PlayerDetailComponent implements OnInit {
-  playerId: number = null;
-  playerToDisplay: Player;
+  playerId: string;
+  playerToDisplay;
 
   constructor(
     private route: ActivatedRoute, private location: Location
