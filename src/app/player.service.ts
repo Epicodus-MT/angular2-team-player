@@ -29,4 +29,9 @@ export class PlayerService {
                               jersey: localUpdatedPlayer.jersey,
                               position: localUpdatedPlayer.position});
   }
+
+  deletePlayer(localPlayerToDelete){
+    var playerEntryInFirebase = this.getPlayerById(localPlayerToDelete.$key);
+    playerEntryInFirebase.remove();
+  }
 }
