@@ -14,10 +14,10 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 export const firebaseConfig = {
-  apiKey: masterFirebaseConfig.apiKey,
-  authDomain: masterFirebaseConfig.authDomain,
-  databaseURL: masterFirebaseConfig.databaseURL,
-  storageBucket: masterFirebaseConfig.storageBucket
+  apiKey: "AIzaSyD-MB2TMXzqEA22uwHgYUQbQ3kF3S2KIIk",
+  authDomain: "angular2-team-roster-f643b.firebaseapp.com",
+  databaseURL: "https://angular2-team-roster-f643b.firebaseio.com",
+  storageBucket: "",
 };
 
 @NgModule({

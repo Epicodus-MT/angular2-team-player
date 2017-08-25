@@ -1,0 +1,24 @@
+{ "players": [{
+    "name": "Henry Wingo",
+    "jersey": "23",
+    "position": "Midfielder",
+    "age": "21",
+    "hometown": "Lake Fores Park, WA",
+    "id": "1"
+    }, {
+    "name": "Osvaldo Alonso",
+    "jersey": "6",
+    "position": "Midfielder",
+    "age": "31",
+    "hometown": "San Cristóbal, Cuba",
+    "id": "2"
+    }, {
+
+    "name": "Brad Evans",
+    "jersey": "3",
+    "position": "Defender/Midfielder",
+    "age": "32",
+    "hometown": "Portland, OR",
+    "id": "3"
+  }]
+}
