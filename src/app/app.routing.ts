@@ -4,6 +4,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent }   from './about/about.component';
 import { RosterComponent }   from './roster/roster.component';
 
+import { PlayerDetailComponent }   from './player-detail/player-detail.component';
+
 const appRoutes: Routes = [
   {
      path: '',
@@ -16,7 +18,10 @@ const appRoutes: Routes = [
   {
     path: 'roster',
     component: RosterComponent
+  },
+  {
+  path: 'players/:id',
+  component: PlayerDetailComponent
   }
- ];
-
+];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
