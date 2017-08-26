@@ -6,7 +6,7 @@
     "Mara Timberlake <maratimberlake@msn.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/Epicodus-MT/angular2-team-roster",
   "ignore": [
     "**/.*",
     "node_modules",

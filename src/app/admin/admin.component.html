@@ -1,6 +1,6 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3>Add New Player to Team</h3>
+    <h3 class="panel-title">Add New Player to Roster</h3>
   </div>
   <div class="panel-body">
     <div>
@@ -21,6 +21,7 @@
         <br>
         <textarea #newPosition></textarea>
       </div>
+
       <button (click)="submitForm(newName.value, newJersey.value, newPosition.value); newName.value=''; newJersey.value=''; newPosition.value=''">Add</button>
     </div>
   </div>

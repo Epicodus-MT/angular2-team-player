@@ -5,7 +5,7 @@ import { Player } from '../player.model';
 @Component({
   selector: 'app-edit-player',
   templateUrl: './edit-player.component.html',
-  styleUrls: ['./edit-player.component.css']
+  styleUrls: ['./edit-player.component.css'],
   providers: [PlayerService]
 })
 

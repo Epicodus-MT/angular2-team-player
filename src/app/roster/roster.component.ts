@@ -7,7 +7,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 @Component({
   selector: 'app-roster',
   templateUrl: './roster.component.html',
-  styleUrls: ['./roster.component.css']
+  styleUrls: ['./roster.component.css'],
   providers: [PlayerService]
 })
 
@@ -22,7 +22,7 @@ export class RosterComponent implements OnInit {
     console.log(this.router.url);
   }
 
-  goToDetailPage(clickedPlayer: Player) {
+  goToDetailPage(clickedPlayer) {
     this.router.navigate(['players', clickedPlayer.$key]);
   };
 }

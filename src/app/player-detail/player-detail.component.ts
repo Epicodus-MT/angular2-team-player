@@ -9,7 +9,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 @Component({
   selector: 'app-player-detail',
   templateUrl: './player-detail.component.html',
-  styleUrls: ['./player-detail.component.css']
+  styleUrls: ['./player-detail.component.css'],
   providers: [PlayerService]
 })
 
@@ -18,13 +18,14 @@ export class PlayerDetailComponent implements OnInit {
   playerToDisplay;
 
   constructor(
-    private route: ActivatedRoute, private location: Location
+    private route: ActivatedRoute,
+    private location: Location,
     private playerService: PlayerService
   ) {}
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.playerId = parseInt(urlParameters['id']);
+      this.playerId = (urlParameters['id']);
     });
     this.playerToDisplay = this.playerService.getPlayerById(this.playerId);
   }

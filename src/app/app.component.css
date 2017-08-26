@@ -1,0 +1,12 @@
+body {
+  background-image: url(https://www.sketchuptextureclub.com/public/texture_d/0035-blue-wallpaper-texture-seamless-hr.jpg);
+  background-repeat: repeat;
+  background-size: 20%;
+  font-family: sans-serif;
+  margin-top: 80px;
+}
+
+#main {
+  background-color: rgba(218, 247, 166, 0.80);
+  color: #1B4F72;
+}
