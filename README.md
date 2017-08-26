@@ -11,7 +11,7 @@ Application for updating and deleting Seattle Sounders team roster.
 ## Description
 
 _This application is a fan page that manages the roster of the Seattle Sounders.
-The user may see a list of all team members, click a team member's entry in the list to visit their profile page (which includes more details about them), visit an "About" page that explains the Seattle Sounders history and current happenings. All data persisted in a database. Administrators (authentication not required) may add, delete or edit individual team members._
+The user may see a list of all team members, click a team member's entry in the list to visit their profile page (which includes more details about them), visit an "About" page that explains the Seattle Sounders history and current happenings. All data persists in a database. Administrators (authentication not required) may add, delete or edit individual team members._
 
 ## Planning
 
@@ -21,8 +21,9 @@ The user may see a list of all team members, click a team member's entry in the 
   * Node
 
 2. Specs
-  * Spec 1: User creates a new player form, fills out new player form, new animal added to database and appears on page after 'add' button clicked.
+  * Spec 1: User creates a new player form, fills out new player form, new player added to database and appears on page after 'Add' button clicked.
   * Spec 2: User edits player details, user clicks 'Update' button after filling out form, information changes database and appears on page.
+  * Spec 3: User deletes player, user clicks 'Delete' button and alert pops up asking, "Are you sure you want to delete this player from the team?", after clicking "OK" the player is deleted from database and disappears from page.
 
 3. Integration
   * app.Component.ts contains all components
@@ -76,7 +77,7 @@ You will need the following things properly installed on your computer.
 ## Setup
 To run this program:
 * _LOCAL: Go to Terminal_
-* `git clone https://github.com/Epicodus-MT/angular2-zoo-tracker.git`
+* `git clone https://github.com/Epicodus-MT/angular2-team-roster.git`
 * `cd angular2-team-roster`
 * `npm install`
 * `bower install`
